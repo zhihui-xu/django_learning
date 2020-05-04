@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>统计结果</title>
+</head>
+<body>
+    <h1>统计结果,总字数为:{{total}}</h1>
+    {% for text,count in word_count%}
+        <p>{{text}}:{{count}}</p>
+    {% endfor %}
+</body>
+</html>
